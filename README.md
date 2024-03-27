@@ -14,17 +14,17 @@ The code provided at `crawl_decentraland.py` contains the details on fetching ne
 
 Variables collected:
 
-`-peer_address (unique identifier of the user -- also connected with blockchain wallet address)
--island_id
--island_center
--island_rad
--peer_id
--parcel_x (parcel on x axis)
--parcel_y (parcel on y axis)
--position_x (user location on x axis)
--position_y (user location on y axis)
--position_z (user location on z axis)
--timestamp_crawl (Time stamp at which the data was recorded)`
+- `peer_address` (unique identifier of the user, also connected with blockchain wallet address)
+- `island_id`
+- `island_center`
+- `island_rad`
+- `peer_id`
+- `parcel_x` (parcel on x axis)
+- `parcel_y` (parcel on y axis)
+- `position_x` (user location on x axis)
+- `position_y` (user location on y axis)
+- `position_z` (user location on z axis)
+- `timestamp_crawl` (Time stamp at which the data was recorded)
 
 b) Blockchain (NFT) transactions:
 
@@ -42,19 +42,19 @@ We use Polygonscan to extract Polygon transactions, finding 3,112,300 NFTs from 
 
 Variables collected for blockchain data:
 
-`-origin_acc (unique identifier of the user who interacted with the contract -- mapped with peer_address)
--txhash (unique identifier of the transaction)
--blockNumber
--timeStamp
--from
--to
--gas_value
--gas_used
--contract_add (unique identifier of the contract address)
--token_id (identifier of the contract e.g. FND)
--token_name (identifier of the contract e.g. Foundation)
--token_symbol
--token_decimal`
+- `origin_acc` (unique identifier of the user who interacted with the contract, mapped with `peer_address`)
+- txhash (unique identifier of the transaction)
+- `blockNumber`
+- `timeStamp`
+- `from`
+- `to`
+- `gas_value`
+- `gas_used`
+- `contract_add` (unique identifier of the contract address)
+- `token_id` (identifier of the contract e.g. FND)
+- `token_name` (identifier of the contract e.g. Foundation)
+- `token_symbol`
+- `token_decimal`
 
 Notes/ Future work:
 
